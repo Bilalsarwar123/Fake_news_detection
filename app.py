@@ -1,6 +1,9 @@
 import streamlit as st
 import joblib
+import streamlit as st
 
+st.markdown("---")
+st.markdown("👨‍💻 Developed by **Bilal Sarwar**")
 # Load model
 model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
@@ -23,3 +26,4 @@ if st.button("Check News"):
             st.success("✅ Real News")
     else:
         st.warning("Please enter some text")
+        
