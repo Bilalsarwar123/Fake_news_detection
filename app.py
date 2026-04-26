@@ -4,6 +4,12 @@ import streamlit as st
 
 st.markdown("---")
 st.markdown("👨‍💻 Developed by **Bilal Sarwar**")
+import streamlit as st
+
+st.image("ChatGPT Image Apr 26, 2026, 03_23_59 PM.png", width=150)
+
+st.title("📰 Fake News Detection")
+st.subheader("Developed by Bilal Sarwar")
 # Load model
 model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
